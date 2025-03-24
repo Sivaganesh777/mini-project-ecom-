@@ -1,0 +1,189 @@
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            background: black;
+            color: white;
+            padding: 5px;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        nav li,ol{
+            display: inline;
+            list-style-type: none;
+            
+        }
+        nav li:nth-child(4){
+            background: rgb(255, 162, 0);
+            padding: 5px;
+            border-radius: 5px;
+        }
+        nav a{
+            text-decoration: none;
+            color: rgb(55, 97, 251);
+            padding: 5px;
+            font-weight: bold;
+        }
+        nav a:hover{
+            background: rgb(55, 97, 251);
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        nav p{
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+        .products{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .lap{
+            width: 300px;
+            height: 400px;
+            place-content: center;
+            box-shadow: 2px 2px 12px black; 
+            position: relative;
+        }
+        .lap button{
+            background: rgb(23, 111, 244);
+            color: white;
+            padding: 8px;
+            border: none;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        .lap button:hover{
+            transform: scale(0.95);
+        }
+        .lap p{
+            font-weight: bold;
+            color: rgb(2, 120, 55);
+        }
+        .lap a{
+            text-decoration: none;
+            color: white;
+        }
+        .lap img:hover{
+            transition: linear 300ms;
+            transform: scale(1.05);
+        }
+        .lap h4{
+            position: absolute;
+            top: -18px;
+            right: 0px;
+            background: red;
+            color: white;
+            padding: 5px 10px;
+            font-size: 12px;
+            font-weight: bold;
+            animation: bounce 1s infinite alternate;
+            z-index: 1;
+        }
+        @keyframes bounce {
+            to{
+                transform: scale(1.4);
+            }
+        }
+        .home{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            color: rgb(0, 94, 255);
+            font-size: 2em;
+            flex-wrap: wrap;
+            margin-top: -70px;
+        }
+        .home p{
+            text-wrap: wrap;
+        }
+        .home button{
+            padding: 8px;
+            background: rgb(2, 107, 228);
+            color: white;
+            border-radius: 8px;
+        }
+        .more{
+            text-align: center;
+            margin-top: 50px;
+        }
+        .features{
+            display: flex;
+            gap: 20px;
+            text-align: center;
+            margin: 20px;
+            margin-top: 50px;
+        }
+        .detail{
+            box-shadow: 2px 2px 12px black;
+            padding: 8px;
+        }
+        .detail h2{
+            background: rgb(0, 60, 255);
+            margin-top: -25px;
+            padding: 10px;
+            color: white;
+        }
+        #contact{
+            background: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        #contact h4{
+            font-size: 1rem;
+            color: rgb(0, 123, 255);
+            text-decoration: underline;
+        }
+        .search{
+            display: flex;
+            justify-content: center;
+        }
+        .search input{
+            width: 50vw;
+            margin-top: 30px;
+            padding: 6px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+        .search img{
+            width: 40px;
+            height: 40px;
+            margin-top: 25px;
+            margin-left: 20px;
+            border-radius: 50%;
+            filter: drop-shadow(2px 2px 2px black);
+        }
+        @media (max-width: 480px) {
+            nav li{
+                display: block;
+            }
+            .search input{
+                width: 40vw;
+            }
+            .home img:nth-child(odd){
+                visibility: hidden;
+            }
+            .home{
+                margin-left: 50px;
+            }
+            .features{
+                flex-wrap: wrap;
+            }
+        }

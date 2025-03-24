@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            position: relative;
+            filter: opacity(40%);
+        }
+        .box h3{
+            position: absolute;
+            top: 200px;
+            font-size: small;
+        }
+        .box h2{
+            position: absolute;
+            bottom: 190px;
+            text-transform: uppercase;
+        }
+    </style>
+
+    <a href="e-com.html"><button type="button">back</button></a>
+
+    <div class="box">
+    <h3>Cart is EMPTY!</h3>
+    <img src="pics/cart.png" alt="">
+    <h2>Purchase Now</h2>
+    </div>
+</body>
+</html>
